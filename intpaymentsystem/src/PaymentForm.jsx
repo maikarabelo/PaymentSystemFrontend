@@ -28,7 +28,7 @@ function PaymentForm() {
 
         try {
             const token = localStorage.getItem('token');
-            const response = await fetch("http://localhost:8080/api/payments/create", {
+            const response = await fetch("https://paymentsystembackend.onrender.com/api/payments/create", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
