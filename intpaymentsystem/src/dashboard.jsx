@@ -24,7 +24,7 @@ function Dashboard() {
     useInactivityLogout(300000); // 5 minutes
     var userId = localStorage.getItem('userId');
     useEffect(() => {
-        fetch(`https://paymentsystem-4svt.onrender.com/api/payments/getByUserId/${userId}`, {
+        fetch(`https://paymentsystembackend.onrender.com/api/payments/getByUserId/${userId}`, {
             headers: {
                 'Authorization': `Bearer ${localStorage.getItem('token')}`, // If using JWT
                 'Content-Type': 'application/json'
